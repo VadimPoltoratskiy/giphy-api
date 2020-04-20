@@ -1,0 +1,6 @@
+{
+    "env": {
+        "MONGODB_CONN": "mongodb://localhost:27017",
+        "MONGODB_DEFAULT_DB": "giphy"
+    }
+}
