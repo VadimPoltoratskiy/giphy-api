@@ -26,12 +26,12 @@ exports.getCards = (req, res, next) => {
           card.save().then(card => {
             return card
           })
-            .then(() => {
-              Card.find().exec().then(cards => {
-                return res.status(200).json(cards)
-              })
-            })
         }
+      })
+      .then(() => {
+        Card.find().exec().then(cards => {
+          return res.status(200).json(cards)
+        })
       })
     .catch(err => {
       if (!statusCode) {
